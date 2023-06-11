@@ -8,6 +8,7 @@ const Joke = sequelize.define('Joke', {
         primaryKey: true
     },
     text: { type: DataTypes.STRING,  allowNull: false  },
+    sender: { type: DataTypes.STRING, allowNull: false},
     category: { type: DataTypes.INTEGER , allowNull: true }
 })
 

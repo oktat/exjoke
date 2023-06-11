@@ -11,5 +11,6 @@ router.post('/login', AuthController.login)
 router.get('/users', UserController.index)
 
 router.get('/jokes', JokeController.index)
+router.post('/jokes', JokeController.store)
 
 module.exports = router
